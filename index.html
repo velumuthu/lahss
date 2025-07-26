@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lourdu Annai Higher School</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <div class="logo">LAHSS</div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#classes" class="nav-link">Classes</a></li>
+                    <li><a href="#facilities" class="nav-link">Facilities</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#news" class="nav-link">News</a></li>
+                    <li><a href="#contact" class="nav-link">Admission open</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Lourdu Annai Higher School</h1>
+            <p>Nurturing Excellence in Education from Class 1 to 12</p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2000">0</span>
+                    <span class="stat-label">Students</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="150">0</span>
+                    <span class="stat-label">Teachers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="25">0</span>
+                    <span class="stat-label">Years of Excellence</span>
+                </div>
+            </div>
+
+            <div>
+                <a href="#about" class="cta-button">Discover Our Legacy</a>
+                <a href="#contact" class="cta-button cta-secondary">Admissions Open</a>
+            </div>
+
+            <!-- Image Slider -->
+            <div class="image-slider">
+                <div class="slider-container">
+                    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                        <div class="slide-overlay">
+                            <div class="slide-content">
+                                <h3>Modern Campus</h3>
+                                <p>State-of-the-art infrastructure for quality education</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                        <div class="slide-overlay">
+                            <div class="slide-content">
+                                <h3>Smart Classrooms</h3>
+                                <p>Interactive learning with modern technology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                        <div class="slide-overlay">
+                            <div class="slide-content">
+                                <h3>Science Laboratory</h3>
+                                <p>Hands-on learning with advanced equipment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <div class="nav-dot active" onclick="currentSlide(1)"></div>
+                    <div class="nav-dot" onclick="currentSlide(2)"></div>
+                    <div class="nav-dot" onclick="currentSlide(3)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2 class="section-title">About Our School</h2>
+        <div class="about-content">
+            <div>
+                <div class="about-text">
+                    <p>Lourdu Annai Higher School stands as a beacon of educational excellence, dedicated to providing quality education from Class 1 to Class 12. Our institution combines traditional values with modern teaching methodologies to create a nurturing environment where every student can thrive.</p>
+                    
+                    <p>With a rich heritage of academic achievement and character building, we prepare our students not just for examinations, but for life. Our experienced faculty, state-of-the-art facilities, and comprehensive curriculum ensure that each student receives the best possible education.</p>
+                </div>
+                
+                <div class="about-features">
+                    <div class="feature-item" onclick="showFeatureModal('academic')">
+                        <div class="feature-icon">🎓</div>
+                        <h3>Academic Excellence</h3>
+                        <p >Consistent high performance in board examinations and competitive tests</p>
+                    </div>
+                    <div class="feature-item" onclick="showFeatureModal('faculty')">
+                        <div class="feature-icon">👥</div>
+                        <h3>Experienced Faculty</h3>
+                        <p>Dedicated teachers with years of experience and modern teaching methods</p>
+                    </div>
+                    <div class="feature-item" onclick="showFeatureModal('development')">
+                        <div class="feature-icon">🌟</div>
+                        <h3>Holistic Development</h3>
+                        <p>Focus on academics, sports, arts, and character development</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="School Building">
+            </div>
+        </div>
+
+        <!-- Principal's Message -->
+        <div class="principal-message">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Principal" class="principal-image">
+            <div class="message-content">
+                <h3>Principal's Message</h3>
+                <p>"At Lourdu Annai Higher School, we believe that education is not just about academic achievement, but about nurturing young minds to become responsible global citizens. Our commitment to excellence in education, combined with our focus on character development, ensures that our students are well-prepared for the challenges of tomorrow."</p>
+                <div class="message-signature">- Rev. Bro. Louis Alex, Principal.</div>
+            </div>
+        </div>
+    </section>~
+
+    <!-- Classes Section -->
+    <section id="classes" class="section">
+        <h2 class="section-title">Our Classes</h2>
+        <div class="classes-grid">
+            <div class="class-card" onclick="showClassModal('primary')">
+                <div class="class-image" style="background-image: url('https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="class-content">
+                    <div class="class-level">Primary</div>
+                    <h3 class="class-title">Classes 1-5</h3>
+                    <p class="class-description">Building strong foundations with interactive learning, creative activities, and personal attention to develop core skills in a nurturing environment.</p>
+                    <div class="subjects-list">
+                        <span class="subject-tag">English</span>
+                        <span class="subject-tag">Tamil</span>
+                        <span class="subject-tag">Mathematics</span>
+                        <span class="subject-tag">Science</span>
+                        <span class="subject-tag">Social Studies</span>
+                        <span class="subject-tag">Art & Craft</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="class-card" onclick="showClassModal('upper-primary')">
+                <div class="class-image" style="background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="class-content">
+                    <div class="class-level">Upper Primary</div>
+                    <h3 class="class-title">Classes 6-8</h3>
+                    <p class="class-description">Expanding knowledge horizons with specialized subjects, practical learning, and skill development to prepare students for higher education.</p>
+                    <div class="subjects-list">
+                        <span class="subject-tag">English</span>
+                        <span class="subject-tag">Tamil</span>
+                        <span class="subject-tag">Mathematics</span>
+                        <span class="subject-tag">Science</span>
+                        <span class="subject-tag">Social Science</span>
+                        <span class="subject-tag">Computer Science</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="class-card" onclick="showClassModal('secondary')">
+                <div class="class-image" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="class-content">
+                    <div class="class-level">Secondary</div>
+                    <h3 class="class-title">Classes 9-10</h3>
+                    <p class="class-description">Preparing for board examinations with comprehensive curriculum, regular assessments, and focused preparation for future academic choices.</p>
+                    <div class="subjects-list">
+                        <span class="subject-tag">English</span>
+                        <span class="subject-tag">Tamil</span>
+                        <span class="subject-tag">Mathematics</span>
+                        <span class="subject-tag">Science</span>
+                        <span class="subject-tag">Social Science</span>
+                        <span class="subject-tag">Computer Applications</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="class-card" onclick="showClassModal('higher-secondary')">
+                <div class="class-image" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="class-content">
+                    <div class="class-level">Higher Secondary</div>
+                    <h3 class="class-title">Classes 11-12</h3>
+                    <p class="class-description">Specialized streams with expert guidance for competitive exams, career counseling, and preparation for higher education and professional courses.</p>
+                    <div class="subjects-list">
+                        <span class="subject-tag">Bio-Math Stream</span>
+                        <span class="subject-tag">Commerce Stream</span>
+                        <span class="subject-tag">Computer Science</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="section facilities">
+        <h2 class="section-title">World-Class Facilities</h2>
+        <div class="facilities-grid">
+            <div class="facility-card" onclick="showFacilityModal('smart-classroom')">
+                <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="facility-icon">🏫</div>
+                <h3 class="facility-title">Smart Classrooms</h3>
+                <p class="facility-description">Modern classrooms equipped with digital boards, projectors, and interactive learning tools for enhanced education experience.</p>
+            </div>
+
+            <div class="facility-card" onclick="showFacilityModal('science-lab')">
+                <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="facility-icon">🔬</div>
+                <h3 class="facility-title">Science Laboratories</h3>
+                <p class="facility-description">Well-equipped Physics, Chemistry, and Biology labs with modern instruments for hands-on learning and experiments.</p>
+            </div>
+
+            <div class="facility-card" onclick="showFacilityModal('computer-lab')">
+                <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="facility-icon">💻</div>
+                <h3 class="facility-title">Computer Lab</h3>
+                <p class="facility-description">State-of-the-art computer laboratory with high-speed internet connectivity and latest software for digital literacy.</p>
+            </div>
+
+            <div class="facility-card" onclick="showFacilityModal('library')">
+                <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="facility-icon">📚</div>
+                <h3 class="facility-title">Library</h3>
+                <p class="facility-description">Extensive collection of books, magazines, and digital resources to foster reading habits and research skills.</p>
+            </div>
+
+            <div class="facility-card" onclick="showFacilityModal('sports')">
+                <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="facility-icon">🏃</div>
+                <h3 class="facility-title">Sports Complex</h3>
+                <p class="facility-description">Multi-purpose sports ground with facilities for cricket, football, basketball, badminton, and other sports activities.</p>
+            </div>
+
+            <div class="facility-card" onclick="showFacilityModal('auditorium')">
+                <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="facility-icon">🎭</div>
+                <h3 class="facility-title">Auditorium</h3>
+                <p class="facility-description">Modern auditorium with advanced sound and lighting systems for cultural events, seminars, and competitions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <h2 class="section-title">School Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openImageModal('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Campus View">
+                <div class="gallery-overlay">Campus View</div>
+            </div>
+            <div class="gallery-item" onclick="openImageModal('https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Smart Classroom">
+                <div class="gallery-overlay">Smart Classroom</div>
+            </div>
+            <div class="gallery-item" onclick="openImageModal('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')">
+                <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Science Lab">
+                <div class="gallery-overlay">Science Laboratory</div>
+            </div>
+            <div class="gallery-item" onclick="openImageModal('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sports Ground">
+                <div class="gallery-overlay">Sports Ground</div>
+            </div>
+            <div class="gallery-item" onclick="openImageModal('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')">
+                <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Library">
+                <div class="gallery-overlay">Library</div>
+            </div>
+            <div class="gallery-item" onclick="openImageModal('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Student Activities">
+                <div class="gallery-overlay">Student Activities</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events Section -->
+    <section id="news" class="section news-events">
+        <h2 class="section-title">Latest News & Events</h2>
+        <div class="news-grid">
+            <div class="news-card">
+                <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="news-content">
+                    <div class="news-date">July 20, 2025</div>
+                    <h3 class="news-title">Annual Sports Day Celebration</h3>
+                    <p class="news-excerpt">Our annual sports day was a grand success with students showcasing their athletic talents in various competitions. The event promoted physical fitness and team spirit.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="news-content">
+                    <div class="news-date">July 15, 2025</div>
+                    <h3 class="news-title">Science Exhibition Winners</h3>
+                    <p class="news-excerpt">Congratulations to our students who won first prize in the district-level science exhibition with their innovative project on renewable energy.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="news-content">
+                    <div class="news-date">July 10, 2025</div>
+                    <h3 class="news-title">New Smart Classroom Initiative</h3>
+                    <p class="news-excerpt">We are proud to announce the launch of our new smart classroom initiative, featuring state-of-the-art interactive whiteboards and digital learning tools.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h4>Address</h4>
+                        <p>Kanakkankuppam, Gingee,Viluppuram, Tamil Nadu, Pincode - 604151, INDIA</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 XXXXXXXXX<br>+91 XXXXXXXXX</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>info@lourduannaischool.edu.in<br>admissions@lourduannaischool.edu.in</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🕒</div>
+                    <div>
+                        <h4>School Hours</h4>
+                        <p>Monday - Friday: 8:00 AM - 4:00 PM<br>Saturday: 8:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form" id="contactFormContainer">
+                <h3>Send us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiry">Inquiry Type</label>
+                        <select id="inquiry" name="inquiry">
+                            <option value="admission">Admission Inquiry</option>
+                            <option value="general">General Information</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="suggestion">Suggestion</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Lourdu Annai Higher School</div>
+            <p class="footer-text">Empowering minds, nurturing dreams, building tomorrow's leaders through quality education and holistic development.</p>
+            <div class="footer-links">
+                <a href="#about">About Us</a>
+                <a href="#classes">Academic Programs</a>
+                <a href="#facilities">Facilities</a>
+                <a href="#contact">Contact</a>
+                <a href="#" onclick="showModal('privacy')">Privacy Policy</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lourdu Annai Higher School. All rights reserved. | Designed with ❤️ for Education</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification"></div>
+    <script src="script.js"></script>
+</body>
+</html>
